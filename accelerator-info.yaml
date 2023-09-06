@@ -1,0 +1,19 @@
+id: 0ec3d039-981d-419f-8f3c-097f17f2f465
+timestamp: 2023-09-06T18:20:52Z
+username: mpluya
+source: TAP-GUI
+accelerator:
+  name: angular-frontend
+  source:
+    image: registry.harbor.learn.tapsme.org/tap/tap-packages@sha256:a93a90bb34a07ea0e6a88887f8372f848ba121451eeff64fa9b2beba44a4f9b0
+fragments:
+  - name: tap-workload
+    source:
+      image: registry.harbor.learn.tapsme.org/tap/tap-packages@sha256:d9c7d8d322f0740666ba7c752a9174d1eb66274338c4f0e211edb1d448104c2a
+options:
+  artifactId: angular-frontend
+  backendService: customer-profile-backend.demo
+  bsGitBranch: main
+  bsGitRepository: github.com?owner=Mpluya&repo=angular-frontend
+  projectName: angular-frontend
+  useSingleSignOn: false
