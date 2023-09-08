@@ -23,10 +23,14 @@ spec:
         apps.tanzu.vmware.com/language: angular
   build:
     env:
-      - name: BP_NODE_RUN_SCRIPTS
-        value: "build"
       - name: BP_WEB_SERVER_ROOT
         value: "dist"
+      - name: BP_WEB_SERVER 
+        value: "nginx"
+      - name: BP_WEB_SERVER_ENABLE_PUSH_STATE
+        value: "true"
+      - name: NODE_ENV
+        value: "development"
   source:
     git:
       url: https://github.com/Mpluya/angular-frontend
