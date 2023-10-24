@@ -18,14 +18,6 @@ spec:
     - name: testing_pipeline_matching_labels
       value:
         apps.tanzu.vmware.com/language: angular
-  build:
-    env:
-    - name: BP_WEB_SERVER
-      value: nginx
-    - name: BP_WEB_SERVER_ROOT
-      value: dist/angular-frontend
-    - name: BP_WEB_SERVER_ENABLE_PUSH_STATE
-      value: true
   source:
     git:
       url: https://github.com/Mpluya/angular-frontend
