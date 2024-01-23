@@ -18,11 +18,6 @@ spec:
     - name: testing_pipeline_matching_labels
       value:
         apps.tanzu.vmware.com/language: angular
-  env:
-    - name: API_BACKEND
-      value: "http://java-rest-service-azure.mae.svc"
-    - name: api_backend
-      value: "http://java-rest-service-azure.mae.svc"
   source:
     git:
       url: https://github.com/Mpluya/angular-frontend
