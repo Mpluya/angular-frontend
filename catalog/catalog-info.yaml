@@ -10,7 +10,7 @@ metadata:
     - tanzu
     - typescript
   annotations:
-    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=angular-frontend"
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=angular-frontend'
 spec:
   type: website
   lifecycle: experimental
